@@ -18,11 +18,11 @@ app.use(express.static('public'))
 app.use(bodyParser.json())
 
 app.get('/',function(req,res){
-    res.render('index',{score:cricFact.over()})
+    res.render('home',{score:cricFact.over()})
 })
 
 app.get('/update',function(req,res){
-    res.render('index',{score:cricFact.over()})
+    res.render('home',{score:cricFact.over()})
 })
 
 app.post('/update', function (req, res) {
