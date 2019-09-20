@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    
+        
+
+     
+          <div class="six columns">
+            <form action="/update" method="POST">
+              <input class="u-full-width scores" type="text" name="lists"
+                placeholder="eg. 4-3-6w" value="{{score.lists}}">
+              <button class="button-primary updateScore" type="submit" name="button">Check Score</button>
+
+            </form>
+
+                       
+            <table>
+
+                <td> <span class="totalSettings "> {{over}}</span> </td>
+              </tr>
+            </table>
+          </div>
+        
+      
+    </div>
+  </div>
+
+</body>
+
+</html>

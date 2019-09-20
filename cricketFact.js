@@ -26,25 +26,23 @@ module.exports = function CricketScoreKeeper() {
 
 
     function add(lists) {
-        list = lists.split('')
+        list = lists.split('');
         if (lists.length == 6) {
             if (overs > 0) {
                 if (wicket > 0) {
                     for (var i = 1; i < list.length; i++) {
                         var n = list.includes("w");
                         check = list[i];
-
                         newList.push(check);
                     }
                     if (n == true) {
                         wicket--
-
                     }
                     overs--
                 }
             }
         }
-        else{
+        else {
             errorM = 'Enter a valid score'
         }
     }
@@ -52,12 +50,12 @@ module.exports = function CricketScoreKeeper() {
 
 
     function over() {
-        
+
         return newList
     }
 
     function score() {
-    
+
         let numOr0 = n => isNaN(n) ? 0 : n
 
         result = newList.reduce((a, b) =>
